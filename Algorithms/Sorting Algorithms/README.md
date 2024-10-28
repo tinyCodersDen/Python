@@ -172,13 +172,12 @@ If r > l <br>
 
 <details>
 <summary>
-6. <a href ="https://github.com/aswnss-m/Python/blob/main/Algorithms/Sorting%20Algorithms/RadixSort.py">Radix Sort</a><br>
+7. <a href ="https://github.com/aswnss-m/Python/blob/main/Algorithms/Sorting%20Algorithms/RadixSort.py">Radix Sort</a><br>
 <b>Radix sort</b> is an integer sorting algorithm that sorts data with integer keys by grouping the keys by individual digits that share the same significant position and value (place value).
 Radix sort uses counting sort as a subroutine to sort an array of numbers.
 </summary><br>
 Because integers can be used to represent strings (by hashing the strings to integers), radix sort works on data types other than just integers. Because radix sort is not comparison based, it is not bounded by \Omega(n \log n)Ω(nlogn) for running time — in fact,
 radix sort can perform in linear time.
-
 ### Algorithm
 <blockquote>
 <ol>
@@ -195,6 +194,30 @@ Sort the elements based on the unit place digits (X=0).</li>
 </blockquote>
 #### No Gif found , Here is a website with visualises the sorting
 <a href="http://www.algostructure.com/sorting/radixsort.php">Radix Sort Visual -- click here</a>
+</details>
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Comb Sort -->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+<details>
+<summary>8.<a href="https://github.com/Anjan50/Python/blob/main/Algorithms/Sorting%20Algorithms/CombSort.py">Comb Sort</a>
+<br>
+<b>Comb Sort </b>is a comparison based sorting technique that compares the differences between the elements of the list. These differences are called as gaps, and the gaps are then sorted out from the lowest negative numbers to the highest positive numbers.
+</summary>
+<br>The array runs in O(n^2) time complexity, but helps make a difference array to solve other problems efficiently.
+Algorithm
+
+To sort an array of size n in ascending order:
+<ol>
+  <li>Find all differences/gaps between each element to each element </li>
+  <li>Reduce gaps through the following equation: (number of elements in array)/(number of elements in array/first element)</li>
+<li>Swap elements based on the gap between the 2 numbers.</li>
+<li>Repeat until array is sorted.</li>
+  </ol><br>
+
+<img src="https://cdn.emre.me/sorting/comb_sort.gif">
+
 </details>
 
 
